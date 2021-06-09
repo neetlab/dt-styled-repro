@@ -1,4 +1,4 @@
-// @types/styled-components 5.1.9
+// @types/styled-components 5.1.10
 import { ElementType, ForwardedRef, forwardRef } from "react";
 import styled from "styled-components";
 
