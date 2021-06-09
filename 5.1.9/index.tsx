@@ -1,5 +1,5 @@
+// @types/styled-components 5.1.9
 import { ForwardedRef, forwardRef } from "react";
-import { ElementType } from 'react';
 import styled from "styled-components";
 
 const Style = styled.button`
@@ -8,10 +8,10 @@ const Style = styled.button`
 `;
 
 const Button = (
-  { as }: { as: ElementType },
+  props: { as: 'p' | 'span' },
   ref: ForwardedRef<HTMLElement | null>
 ) => {
-  return <Style as={as} ref={ref} />;
+  return <Style as={props.as} ref={ref} />;
 };
 
 export default forwardRef(Button);
