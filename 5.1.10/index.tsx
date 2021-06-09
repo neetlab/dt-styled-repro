@@ -12,6 +12,7 @@ const Button = (
   ref: ForwardedRef<HTMLElement | null>
 ) => {
   return <Style as={props.as} ref={ref} />;
+  //                          ^^^ Errors
 };
 
 const ButtonFixed = (
